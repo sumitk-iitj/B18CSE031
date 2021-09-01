@@ -1,0 +1,18 @@
+extends base.pug
+
+block content
+  table.table.table-striped
+    thead
+      tr
+        th Employee No.
+        th First Name 
+        th Last Name
+        th Salary
+    each emp in employees
+      tr
+        td=emp.empNo
+        td=emp.firstName
+        td=emp.lastName
+        td=emp.salary
+        td 
+          a.btn.btn-danger(href='/delete/'+emp.id) Delete

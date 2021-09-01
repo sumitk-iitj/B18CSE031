@@ -1,0 +1,18 @@
+extends base.pug
+
+block content
+    form(method='POST')
+        .form-group
+            label(for='empNo') Employee Number
+            input#empNo.form-control(type='number' placeholder='Employee number' name='empNo')
+        .form-group
+            label(for='firstName') First Name
+            input#firstName.form-control(type='text' placeholder='First name' name="firstName")
+        .form-group
+            label(for='lastName') Last Name
+            input#lastName.form-control(type='text' placeholder='Last name' name="lastName")
+        .form-group
+            label(for='salary') Salary
+            input#salary.form-control(type='number' placeholder='Salary' name="salary")
+        button.btn.btn-primary(type='submit') Submit
+
