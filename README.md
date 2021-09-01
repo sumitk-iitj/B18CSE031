@@ -36,7 +36,7 @@ Developed for the course CSL7510 Virtualization and Cloud Computing: Assessment 
 
 ### Building and running the docker image
 
-The following set of commands are executed in a host terminal in the repository directory to build the docker image using the Dockerfile and instantiating the image:
+Clone the repository and navigate to the repository folder. The following set of commands are executed in a host terminal in the repository directory to build the docker image using the Dockerfile and instantiate the image:
 
 1. Build the docker image from the Dockerfile: \
 `docker build . -t b18cse031/vcc-webapp` \
@@ -46,7 +46,7 @@ This compiles the Dockerfile in the current directory and builds a docker image 
 2. Instantiate the image to create a container, bind the port 3000 of the container to port 8080 of the host, and run it in the background: \
 `docker run -p 8080:3000 -d b18cse031/vcc-webapp`
 
-3. List the running containers using:
+3. List the running containers using: \
 `docker ps` \
 \
 You should be able to see the newly created container and that the host port 8080 is being forwarded to container port 3000.
